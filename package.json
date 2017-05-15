@@ -1,0 +1,24 @@
+{
+  "name": "image-search-scobars",
+  "version": "1.0.0",
+  "description": "Free Code Camp exercises",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SCOBARS900/image-search-scobars.git"
+  },
+  "author": "Julio Escobar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SCOBARS900/image-search-scobars/issues"
+  },
+  "homepage": "https://github.com/SCOBARS900/image-search-scobars#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2"
+  }
+}
