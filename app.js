@@ -11,7 +11,15 @@ app.use(cors());
 
 app.use(express.static('public'));
 
-
+app.get('/listimages/:searchid', function(req, res) {
+   var imageR = req.params.searchid;
+   var imageE = encodeURI(imageR);
+    
+    
+    
+    
+    
+});
 
 
 app.set('port', (process.env.PORT || 3000));
