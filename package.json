@@ -4,7 +4,7 @@
   "description": "Free Code Camp exercises",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
     "express": "^4.15.2",
     "mongoose": "^4.9.9",
     "pixabayjs": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1"
   }
 }
