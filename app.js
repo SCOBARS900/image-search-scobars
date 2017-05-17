@@ -94,14 +94,7 @@ app.get('/recentsearch', function(req, res) {
         }
         
     }).limit(10);
-    
-app.get('/test', function(req, res) {
-   
-    console.log(process.env.MONGOLAB_URI);
-    
-});  
-    
-    
+      
 });
 
 
