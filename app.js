@@ -30,18 +30,20 @@ app.get('/flickrlist/:searchval*', function(req, res) {
     
     var offsetE = req.query.offset;
     
+    
     var data = new searchModel(
         {
             searchString: searchvalE
         }
       );
       
+     
       data.save(err=> {
           if(err) {
               return res.send('Error saving to database');
           }
       });
-
+    
     
   flickrOptions = {
       api_key: "f41dc14c732520b51790802885b75c30",
@@ -91,7 +93,7 @@ app.get('/recentsearch', function(req, res) {
             res.json(data);
         }
         
-    }).limit(10);
+    }).sort({ $natural: -1 }).limit(10);
       
 });
 
