@@ -13,8 +13,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 var db = process.env.MONGOLAB_URI;
-var flickrKey = process.env.flickrApiKey;
-var flickrSecret = process.env.secretFlickrKey;
 
 mongoose.connect(db, function(err){
   if(err){
@@ -88,7 +86,7 @@ app.get('/flickrlist/:searchval*', function(req, res) {
 app.get('/recentsearch', function(req, res) {
     searchModel.find({}, function (err, data) {
         if (err) {
-          console.log('nothing');  
+          throw err; 
         } else {
             res.json(data);
         }
