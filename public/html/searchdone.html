@@ -1,0 +1,40 @@
+<html lang="en" ng-app>
+    <head>
+        <title>Timestamp Microservice and Request Header Microservice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                Image Search
+            </h1>
+            <div>
+                <h2>User stories:</h2>
+                <ul>1) User can pass a string as a parameter, and it will check to see whether that string 
+                contains either a unix timestamp or a natural language date (example: January 1, 2016 or 1451606400)</ul>
+                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date. If it does not it will return null.</ul>
+                <ul>3) User can use the imput field to insert a date then click button "Go" or put directly on the url like the examples bellow</ul>
+                <ul>4) User can click in the button Request Header and it will return the IP adress, language and operating system.</ul>
+            </div>
+            
+            
+            <div id="output">
+            </div>
+           
+            
+            
+            
+        </div>
+    </body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/savevariable.js"></script>
+    <script src="../js/imageapi.js"></script>
+    
+    
+    
+    
+    
+</html>
